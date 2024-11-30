@@ -1,0 +1,9 @@
+# Ignore system directories
+$RECYCLE.BIN/
+System Volume Information/
+
+# Ignore node_modules
+node_modules/
+
+# Ignore any logs or temporary files
+*.log
