@@ -4,6 +4,7 @@ export const allDataContext = createContext();
 
 const AllDataContextProvider = ({ children }) => {
     const [bgColor, setBgColor] = useState([]);
+    const [showModal, setShowModal] = useState(false);
 
     const fetchBGColor = async () => {
         const response = await fetch('/data/bgColor.json');
@@ -19,7 +20,9 @@ const AllDataContextProvider = ({ children }) => {
 
     return (
         <allDataContext.Provider value={{
-            bgColor
+            bgColor,
+            setShowModal,
+            showModal
         }}>
             {children}
         </allDataContext.Provider>

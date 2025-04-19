@@ -10,8 +10,7 @@ import "react-quill/dist/quill.snow.css";
 
 const Notes = () => {
     const [notes, setNotes] = useState([]);
-    const [showModal, setShowModal] = useState(false);
-    const { bgColor } = useContext(allDataContext);
+    const { bgColor, setShowModal, showModal } = useContext(allDataContext);
 
 
     const handleNotesAdd = () => {
