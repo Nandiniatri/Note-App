@@ -1,0 +1,82 @@
+.notes-main-container {
+    border: solid 1px gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.notes-inside-div {
+    border: solid 1px red;
+    background-color: rgb(174, 172, 172);
+    height: 40vh;
+    cursor: pointer;
+    position: relative;
+}
+
+.color-box {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.showModal-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    position: absolute;
+    top: 40px; 
+    right: 10px;
+    z-index: 1;
+}
+
+.button-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+.btn-div1 {
+    border: none;
+    padding: 1px 4px;
+    cursor: pointer;
+}
+
+.btn-div1:hover {
+    background-color: gainsboro;
+    border-radius: 2px;
+}
+
+.btn-div2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.noteBtn {
+    background-color: rgb(94, 90, 90);
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.noteBtn:hover {
+    background-color: rgb(94, 90, 90);
+}
+
+.ql-container{
+    border: solid;
+}
