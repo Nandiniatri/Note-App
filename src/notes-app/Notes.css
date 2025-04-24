@@ -1,31 +1,20 @@
 .note-main-container-div {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     height: 100vh;
     gap: 50px;
     padding: 20px;
     width: 100%;
+    background-color: #333;
 }
 
 .div1 {
-    flex: 1; 
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
     width: 50%;
-}
-
-.div2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .notes-main-container {
@@ -40,10 +29,10 @@
 .notes-inside-div {
     width: 300px;
     height: 300px;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
     border-radius: 12px;
     cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
     position: relative;
 }
 
@@ -82,25 +71,27 @@
     z-index: 2;
 }
 
-.btn-div1, .btn-div2 {
+.btn-div1,
+.btn-div2 {
     cursor: pointer;
     padding: 5px;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
-.btn-div1:hover, .btn-div2:hover {
+.btn-div1:hover,
+.btn-div2:hover {
     background-color: gainsboro;
 }
 
 .noteBtn {
-    background-color: #5e5a5a;
-    color: white;
+    /* background-color: #5e5a5a; */
+    /* color: white; */
     padding: 8px 16px;
     border-radius: 6px;
     font-size: 15px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    /* transition: background-color 0.3s; */
     font-weight: bold;
 }
 
@@ -115,6 +106,7 @@
     background-color: transparent;
     min-height: 200px;
     padding: 5px;
+    color: white;
 }
 
 .ql-toolbar.ql-snow {
@@ -122,3 +114,89 @@
     background-color: #f9f9f9;
     border-radius: 10px 10px 0 0;
 }
+
+
+/* .save-note-div {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: solid;
+} */
+
+/* .div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    border: solid blue;
+}
+
+
+.saveNote {
+    border: solid blue;
+    padding: 10px;
+    height: 20vh;
+    width: 100%;
+}
+
+.save-note-div{
+    border: solid red;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+} */
+
+
+.div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+    /* background-color: #f0f0f0; */
+    border-radius: 10px;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+    gap: 20px;
+    /* height: 100vh; */
+    overflow: hidden; 
+}
+
+.save-note-div {
+    border: solid red;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 100%;  
+    overflow-y: scroll;
+    color: white;
+    align-items: center;
+}
+
+.saveNote {
+    border: solid blue;
+    padding: 10px;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    max-height: 250px; 
+    height: 20vh;
+}
+
+h4{
+    color: white;
+}
+
+/* .save-div{
+    border: solid;
+} */

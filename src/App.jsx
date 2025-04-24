@@ -1,11 +1,15 @@
 import './App.css'
+import DangerouslySetInnerHTMLFile from './extraQuillEditor/dangerouslySetInnerHTML'
+import Note from './notes-app/Note'
 import Notes from './notes-app/Notes'
 
 function App() {
 
   return (
     <>
-      <Notes />
+      {/* <DangerouslySetInnerHTMLFile /> */}
+      {/* <Notes /> */}
+      <Note />
     </>
   )
 }

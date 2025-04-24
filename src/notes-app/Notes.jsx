@@ -13,6 +13,7 @@ import { MdCheck } from "react-icons/md";
 const Notes = () => {
     const [notes, setNotes] = useState([]);
     const { bgColor, setShowModal, showModal } = useContext(allDataContext);
+    const [saveNote, setSaveNote] = useState([]);
 
     const modules = {
         toolbar: [
@@ -22,21 +23,30 @@ const Notes = () => {
     }
 
 
+    const handleQuillValue = (value, id) => {
+        // console.log(value);
+        // setNotes(prev => pre)
+        // setQuillValue(value);
 
-    const saveNote = () => {
-
+        setNotes(prev =>
+            prev.map((item) =>
+                item.id === id ? { ...item, quill: value } : item)
+        )
     }
 
+
+    const handleSaveNote = () => {
+        // setSaveNote(notes);
+        setSaveNote((prev) => [...prev, ...notes]);
+    }
+
+
     const handleNotesAdd = () => {
-        setNotes((prevNotes) => [
-            ...prevNotes,
-            {
-                id: Date.now(), bgColor: "gray", quill: <ReactQuill
-                    theme="snow"
-                    modules={modules}
-                />
-            }
-        ]);
+        const newNote = [{
+            id: Date.now(), bgColor: "gray", quill: ""
+        }]
+
+        setNotes(newNote);
     };
 
     const handleNoteDel = (id) => {
@@ -49,8 +59,6 @@ const Notes = () => {
 
     const handleBgColor = (color, id) => {
         console.log(color);
-        // setNotes(color);
-        // setNotes((prev) => prev.color);  
         setNotes(notes.map(note =>
             note.id === id ? { ...note, bgColor: color } : note
         ));
@@ -67,15 +75,14 @@ const Notes = () => {
                                 key={note.id}
                                 className="notes-inside-div"
                             >
-
-                                <div className="quill-container-div" style={{ backgroundColor: note.bgColor }}>{note.quill}</div>
+                                <div className="quill-container-div" style={{ backgroundColor: note.bgColor }} draggable><ReactQuill theme="snow" modules={modules} onChange={(value) => handleQuillValue(value, note.id)} /></div>
 
                                 <div className="button-div">
                                     <p onClick={() => handleThreeDot(note.id)} className="btn-div1"> <FiMoreHorizontal size={20} /></p>
 
                                     <p onClick={() => handleNoteDel(note.id)} className="btn-div2"><TiDelete size={23} /></p>
 
-                                    <p onClick={saveNote}><MdCheck size={24} /></p>
+                                    <p onClick={handleSaveNote}><MdCheck size={24} /></p>
                                 </div>
 
                                 <div>
@@ -97,11 +104,6 @@ const Notes = () => {
                     })}
                 </div>
 
-            </div>
-
-
-            <div className="div2">
-                <h4>Recent notes</h4>
             </div>
 
         </div>
