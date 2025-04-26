@@ -3,3 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+.resizing-container{
+    border: solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.resizing-container h2{
+    border: solid 1px;
+    padding: 30px;
+}
