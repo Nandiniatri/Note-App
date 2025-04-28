@@ -39,12 +39,6 @@
     z-index: 10;
 }
 
-.color-box {
-    width: 40px;
-    height: 35px;
-    cursor: pointer;
-    /* border: 2px solid #e0e0e0; */
-}
 
 .note-del-div {
     position: absolute;
@@ -61,14 +55,25 @@
     top: 50px;
     right: 10px;
     background-color: white;
-    /* padding: 2px; */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
     z-index: 15;
     cursor: pointer;
-    width: 20%;
-    flex-direction: row;
+    padding: 10px;
+    width: auto;
+    border: 1px solid #ccc;
+    display: flex; 
+    gap: 8px; 
+    flex-wrap: wrap;
 }
+
+.color-box {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
 
 .del-class,
 .threeDot {

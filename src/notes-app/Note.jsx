@@ -187,7 +187,7 @@ const Note = () => {
 
                                 <div>
                                     {note.showModal && (
-                                        <div className="color-picker" style={{ display: 'flex', padding: '4px', gap: '5px', flexWrap: 'wrap' }}>
+                                        <div className="color-picker">
                                             {bgColor.map((item) => {
                                                 return (
                                                     <div
@@ -195,9 +195,6 @@ const Note = () => {
                                                         className="color-box"
                                                         style={{
                                                             backgroundColor: item.bg,
-                                                            // width:'20%',
-                                                            // display:'flex',
-                                                            // flexDirection:'row'
                                                         }}
                                                         onClick={() => handleBgColors(item.bg, note.id)}
                                                     ></div>
@@ -207,7 +204,7 @@ const Note = () => {
                                     )}
                                 </div>
 
-                                <div style={{ backgroundColor: note.bgColor, flexGrow: 1, overflow: 'auto' }}>
+                                <div style={{ backgroundColor: note.bgColor, flexGrow: 1}}>
                                     <ReactQuill modules={modules} theme='snow' onChange={() => handleReactQuillValue(note)} placeholder='Add your notes...' className='quill-container' style={{
                                         height: '100%',
                                         border: 'none',
