@@ -68,7 +68,6 @@ import 'react-quill/dist/quill.snow.css';
 import { Rnd } from 'react-rnd';
 
 
-
 const Note = () => {
     const [notes, setNotes] = useState([]);
     const [dragged, setDragged] = useState(null);
@@ -164,7 +163,6 @@ const Note = () => {
                             }}
                             minWidth={200}
                             minHeight={150}
-                            bounds="window"
                             enableResizing={{
                                 top: true,
                                 right: true,
