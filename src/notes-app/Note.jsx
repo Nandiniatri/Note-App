@@ -127,7 +127,7 @@ const Note = () => {
         const offset = notes.length * 25;
         // console.log(offset);
 
-        const newNote = { id: Date.now(), content: "", x: 10 + offset, y: 10 + offset, bgColor: '#9E9E9E', showModal: false, width: 200, height: 200 };
+        const newNote = { id: Date.now(), content: "", x: 10 + offset, y: 10 + offset, bgColor: '#9E9E9E', showModal: false, width: 200, height: 200, col: 'white' };
         setNotes((prev) => [...prev, newNote]);
     }
 
@@ -174,11 +174,8 @@ const Note = () => {
                                 height: '122%',
                                 width: '130%',
                                 display: 'flex',
-                                // flexDirection: 'column',
                                 backgroundColor: note.bgColor,
-                                // borderRadius: '8px',
-                                // boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
-                                overflow: 'hidden'
+                                overflow: 'hidden',
                             }}>
                                 <div className='note-del-div' style={{ display: 'flex', justifyContent: 'flex-end', padding: '4px' }}>
                                     <RxDotsVertical size={18} onClick={() => handleThree(note.id)} className='threeDot' />
@@ -195,6 +192,7 @@ const Note = () => {
                                                         className="color-box"
                                                         style={{
                                                             backgroundColor: item.bg,
+                                                            color:item.col
                                                         }}
                                                         onClick={() => handleBgColors(item.bg, note.id)}
                                                     ></div>
@@ -204,11 +202,12 @@ const Note = () => {
                                     )}
                                 </div>
 
-                                <div style={{ backgroundColor: note.bgColor, flexGrow: 1}}>
+                                <div style={{ backgroundColor: note.bgColor, flexGrow: 1 }}>
                                     <ReactQuill modules={modules} theme='snow' onChange={() => handleReactQuillValue(note)} placeholder='Add your notes...' className='quill-container' style={{
                                         height: '100%',
                                         border: 'none',
-                                        backgroundColor: note.bgColor
+                                        backgroundColor: note.bgColor,
+    
                                     }} />
                                 </div>
                             </div>
