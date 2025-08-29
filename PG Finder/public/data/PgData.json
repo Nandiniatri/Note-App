@@ -1,0 +1,49 @@
+{
+    "PGRoomInfo" :[
+    {
+        "id":"1",
+        "img":"https://res.cloudinary.com/stanza-living/image/upload/f_auto,q_auto,w_600/e_improve/e_sharpen:10/e_saturation:10/v1554802583/Website/Residences/Boston/1.jpg",
+        "title":"Taiping ",
+        "subTitle":"Medanta",
+        "gender":"Unisex",
+        "bathRoom":"Attached WashRoom",
+        "bad":"Single",
+        "start":"Start from",
+        "money":"₹24,299/mo*"
+    },
+    {
+        "id":"2",
+        "img":"https://res.cloudinary.com/stanza-living/image/upload/f_auto,q_auto,w_600/e_improve/e_sharpen:10/e_saturation:10/v1554802583/Website/Residences/Boston/1.jpg",
+        "title":"Houseeee",
+        "subTitle":"Medanta",
+        "gender":"Unisex",
+        "bathRoom":"Attached WashRoom",
+        "bad":"Single",
+        "start":"Start from",
+        "money":"₹24,299/mo*"
+    },
+    {
+        "id":"3",
+        "img":"https://res.cloudinary.com/stanza-living/image/upload/f_auto,q_auto,w_600/e_improve/e_sharpen:10/e_saturation:10/v1554802583/Website/Residences/Boston/1.jpg",
+        "title":"Nandini",
+        "subTitle":"Medanta",
+        "gender":"Unisex",
+        "bathRoom":"Attached WashRoom",
+        "bad":"Single",
+        "start":"Start from",
+        "money":"₹24,299/mo*"
+    },
+    {
+        "id":"4",
+        "img":"https://res.cloudinary.com/stanza-living/image/upload/f_auto,q_auto,w_600/e_improve/e_sharpen:10/e_saturation:10/v1554802583/Website/Residences/Boston/1.jpg",
+        "title":"Satyam",
+        "subTitle":"Medanta",
+        "gender":"Unisex",
+        "bathRoom":"Attached WashRoom",
+        "bad":"Single",
+        "start":"Start from",
+        "money":"₹24,299/mo*"
+    }
+]
+
+}

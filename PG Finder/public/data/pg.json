@@ -1,0 +1,122 @@
+{
+    "DropDownData":[
+        { 
+                "id":"1",
+                "name":"Locality",
+                "type":"search",
+                "value":"search",
+                "buttons":[
+                    {
+                        "id":"1",
+                        "text":"Badshahpur"
+                    },
+                    {
+                        "id":"2",
+                        "text":"DLF Phase 4"
+                    },
+                    {
+                        "id":"3",
+                        "text":"Old Gurgaon"
+                    },
+                    {
+                        "id":"4",
+                        "text":"Udyog Vihar"
+                    }
+                ]
+            },
+            {
+                "id":"2",
+                "name":"Select Range",
+                "type":"range",
+                "value":"range",
+                "min":"0",
+                "max":"10",
+                "buttons":[
+                    {
+                        "id":"1",
+                        "text":"min price"
+                    },
+                    {
+                        "id":"2",
+                        "text":"max price"
+                    }
+                ]
+            },
+            {
+                "id":"3",
+                "name":"Gender",
+                "type":"button",
+                "value":"",
+                "buttons":[
+                    {
+                        "id":"1",
+                        "text":"Male"
+                    },
+                    {
+                        "id":"2",
+                        "text":"Female"
+                    },
+                    {
+                        "id":"3",
+                        "text":"Unisex"
+                    }
+                ]
+            },
+            {
+                "id":"4",
+                "name":"Occupancy",
+                "type":"button",
+                "value":"",
+                "buttons":[
+                    {
+                        "id":"1",
+                        "text":"Single Occupancy"
+                    },
+                    {
+                        "id":"2",
+                        "text":"Double Occupancy"
+                    },
+                    {
+                        "id":"3",
+                        "text":"Triple Occupancy"
+                    },
+                    {
+                        "id":"4",
+                        "text":"Quintuple Occupancy"
+                    },
+                    {
+                        "id":"5",
+                        "text":"Dorm"
+                    }
+                ]
+            },
+            {
+                "id":"4",
+                "name":"More Filters",
+                "type":"button",
+                "value":"",
+                "buttons":[
+                    {
+                        "id":"1",
+                        "text":"Attached Balcony"
+                    },
+                    {
+                        "id":"2",
+                        "text":"Air Conditioning"
+                    },
+                    {
+                        "id":"3",
+                        "text":"Attached Washroom"
+                    },
+                    {
+                        "id":"4",
+                        "text":"Storage Shelf"
+                    },
+                    {
+                        "id":"5",
+                        "text":"Desert Cooler"
+                    }
+                ]
+            }
+        ]
+}
